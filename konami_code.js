@@ -11,19 +11,22 @@ const codes = [
   "a"
 ];
 
+let index = 0;
+
 function init() {
   let key;
-  document.body.addEventListener("keydown", e1 => {
-    key = e1.key;
-    if(key === "ArrowUp") {
-      document.body.addEventListener("keydown", e2 => {
-        key = e2.key;
-        if(key === "ArrowDown") {
-          alert("Arrow Up & Down !!!");
-        } else {
-          key = '';
-        }
-      });
+  document.body.addEventListener("keydown", e => {
+    key = e.key;
+    if(key === codes[index]) {
+      index++;
+
+      if(index === codes.length) {
+        alert('Hurray!');
+        
+        index = 0;
+      }
+    } else {
+      index = 0;
     }
   });
 }
