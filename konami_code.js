@@ -19,9 +19,9 @@ function init() {
       document.body.addEventListener("keydown", e => {
         key = e.key;
         if(key === "ArrowDown") {
-          alert("ArrowUp!!!");
+          alert("Arrow Up and Down !!!");
         }
-      
+      });
     }
   });
 }
