@@ -20,6 +20,8 @@ function init() {
         key = e2.key;
         if(key === "ArrowDown") {
           alert("Arrow Up & Down !!!");
+        } else {
+          key = '';
         }
       });
     }
