@@ -15,6 +15,9 @@ function init() {
   let key;
   document.body.addEventListener("keydown", e => {
     key = e.key;
+    if(key === "ArrowUp") {
+      
+    }
     alert("ArrowUp!!!");
   });
 }
